@@ -24,6 +24,7 @@ require_once 'partials/connect.php';
     <div class="container">
         <!-- form modal -->
         <?php include 'form.php' ?>
+        <?php include "profile.php" ?>
 
         <!-- input search and button section-->
         <div class="row mb-3">
@@ -43,30 +44,9 @@ require_once 'partials/connect.php';
         </div>
 
         <!-- show table -->
-        <table class="table" id="usertable">
-            <thead class="table-dark">
-                <tr>
-                    <th scope="col">Image</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Phone</th>
-                    <th scope="col">Operations</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">Picture1</th>
-                    <td>Khanam</td>
-                    <td>khanam@demo.com</td>
-                    <td>0987678</td>
-                    <td>
-                        <span>Edit</span>
-                        <span>Profile</span>
-                        <span>Delete</span>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <?php include "tableData.php" ?>
+
+
 
         <!-- pagination -->
         <nav aria-label="Page navigation example">
